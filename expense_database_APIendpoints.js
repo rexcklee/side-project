@@ -1,5 +1,5 @@
 const express = require('express');  // for create API endpoints
-const mysql = require('mysql2');    // for database query
+const mysql = require('mariadb');    // for database query
 const cors = require('cors');
 const dayjs = require('dayjs');
 
