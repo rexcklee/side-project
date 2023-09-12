@@ -7,8 +7,8 @@ const dayjs = require('dayjs');
 const pool = mysql.createPool({
     connectionLimit: 10,
     host: 'localhost',
-    user: 'rexlee',
-    password: 'rl123456',
+    user: 'root',
+    password: '!Rl1234567',
     database: 'purchase_record_project'
 });
 
