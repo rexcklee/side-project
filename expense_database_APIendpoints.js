@@ -6,7 +6,7 @@ const dayjs = require('dayjs');
 // Create a connection pool to the MYSQL database
 const pool = mysql.createPool({
     connectionLimit: 30,
-    host: '192.168.100.128',
+    host: 'localhost:3306/run/mysqld/mysqld.sock',
     user: 'root',
     password: '!Rl1234567',
     database: 'purchase_record_project'
