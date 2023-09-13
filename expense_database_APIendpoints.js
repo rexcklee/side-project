@@ -1,12 +1,12 @@
 const express = require('express');  // for create API endpoints
-const mysql = require('mariadb');    // for database query
+const mysql = require('mysql2');    // for database query
 const cors = require('cors');
 const dayjs = require('dayjs');
 
 // Create a connection pool to the MYSQL database
 const pool = mysql.createPool({
     connectionLimit: 30,
-    host: 'localhost:3306/run/mysqld/mysqld.sock',
+    host: 'database-1.cmis6pkt00lz.us-east-2.rds.amazonaws.com:3306',
     user: 'root',
     password: '!Rl1234567',
     database: 'purchase_record_project'
