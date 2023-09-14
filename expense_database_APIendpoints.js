@@ -16,8 +16,11 @@ const pool = mysql.createPool({
 // Create an Express app
 const app = express();
 
-// Enable CORS
-app.use(cors());
+const corsOptions = {
+    origin: 'http://localhost:3000',
+};
+
+app.use(cors(corsOptions));
 
 // Parse JSON request bodies
 app.use(express.json());
